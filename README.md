@@ -16,5 +16,6 @@
 Run the lint command in the example app.
 
 ```bash
+yarn install
 yarn example
 ```
