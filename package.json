@@ -1,0 +1,21 @@
+{
+  "name": "shared-config",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "example": "cd example && yarn run lint"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "resolutions": {
+    "eslint": "8.57.0",
+    "@typescript-eslint/eslint-plugin": "7.5.0",
+    "@typescript-eslint/parser": "7.5.0"
+  },
+  "workspaces": [
+    "example",
+    "packages/*"
+  ]
+}
