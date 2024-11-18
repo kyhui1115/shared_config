@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "example": "cd example && yarn run lint"
+    "example": "yarn workspace example"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
@@ -15,7 +15,7 @@
     "@typescript-eslint/parser": "7.5.0"
   },
   "workspaces": [
-    "example",
+    "apps/*",
     "packages/*"
   ]
 }

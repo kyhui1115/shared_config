@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   const [count, setCount] = useState(0);
 
-  function HANDLE_CLICK() {
+  function HANDLE_CLICK(e: any) {
     // setCount(count + 1);
   }
 
@@ -14,8 +14,8 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <button onClick={HANDLE_CLICK}></button>
-    </>
+    <div>
+      <button onClick={HANDLE_CLICK}>Button</button>
+    </div>
   );
 }
