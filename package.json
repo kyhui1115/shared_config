@@ -4,18 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "example": "yarn workspace example"
+    "example": "pnpm --filter example"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
   },
-  "resolutions": {
-    "eslint": "8.57.0",
-    "@typescript-eslint/eslint-plugin": "7.5.0",
-    "@typescript-eslint/parser": "7.5.0"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "pnpm": {
+    "overrides": {
+      "eslint": "8.57.0",
+      "@typescript-eslint/eslint-plugin": "7.5.0",
+      "@typescript-eslint/parser": "7.5.0"
+    }
+  }
 }

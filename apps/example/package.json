@@ -14,8 +14,8 @@
     "next": "14.2.5"
   },
   "devDependencies": {
-    "@org/eslint-config": "*",
-    "@org/prettier-config": "*",
+    "@org/eslint-config": "workspace:*",
+    "@org/prettier-config": "workspace:*",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
